@@ -1,3 +1,4 @@
+import 'package:bangun_datar_app/pages/jajargenjangpage.dart';
 import 'package:bangun_datar_app/pages/persegipage.dart';
 import 'package:bangun_datar_app/pages/persegipanjangpage.dart';
 import 'package:bangun_datar_app/pages/segitigapage.dart';
@@ -36,7 +37,7 @@ class HomePage extends StatelessWidget {
                 child: CustomMenu(imageAssets: "asset/segitiga.png",title: "Segitiga")),
             InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => SegitigaPage()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => JajarGenjangPage()));
                 },
                 child: CustomMenu(imageAssets: "asset/jajargenjang.jpg",title: "Jajar Genjang")),
 
