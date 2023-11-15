@@ -37,7 +37,7 @@ class JajarGenjangPage extends StatelessWidget {
               decoration: InputDecoration(
                   fillColor: Colors.white,
                   filled: true,
-                  labelText: 'label',
+                  labelText: 'alas',
                   hintText: 'hint',
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding: EdgeInsets.symmetric(vertical: 4, horizontal: 8),
@@ -60,7 +60,7 @@ class JajarGenjangPage extends StatelessWidget {
               decoration: InputDecoration(
                   fillColor: Colors.white,
                   filled: true,
-                  labelText: 'label',
+                  labelText: 'tinggi',
                   hintText: 'hint',
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding: EdgeInsets.symmetric(vertical: 4, horizontal: 8),
@@ -83,7 +83,7 @@ class JajarGenjangPage extends StatelessWidget {
               decoration: InputDecoration(
                   fillColor: Colors.white,
                   filled: true,
-                  labelText: 'label',
+                  labelText: 'b',
                   hintText: 'hint',
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding: EdgeInsets.symmetric(vertical: 4, horizontal: 8),
