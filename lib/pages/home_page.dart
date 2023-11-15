@@ -1,4 +1,6 @@
 import 'package:bangun_datar_app/pages/persegipage.dart';
+import 'package:bangun_datar_app/pages/persegipanjangpage.dart';
+import 'package:bangun_datar_app/pages/segitigapage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -22,25 +24,27 @@ class HomePage extends StatelessWidget {
               child: CustomMenu(imageAssets: "asset/persegi.png",title: "Persegi")),
           Row(
           children: [
-            Expanded(child: CustomMenu(imageAssets: "asset/segitiga.png",title: "Segitiga")),
-            Expanded(child: CustomMenu(imageAssets: "asset/segitiga.png",title: "Segitiga")),
-            Expanded(child: CustomMenu(imageAssets: "asset/segitiga.png",title: "Segitiga")),
+            InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => PersegiPanjangPage()));
+                },
+                child: CustomMenu(imageAssets: "asset/persegipanjang.jpg",title: "Persegi Panjang")),
+            InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => SegitigaPage()));
+                },
+                child: CustomMenu(imageAssets: "asset/segitiga.png",title: "Segitiga")),
+            InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => SegitigaPage()));
+                },
+                child: CustomMenu(imageAssets: "asset/jajargenjang.jpg",title: "Jajar Genjang")),
+
+
+
       ],
     ),
-    Container(
-    margin: EdgeInsets.all(8),
-    padding: EdgeInsets.symmetric(vertical:8, horizontal:16),
-    decoration: BoxDecoration(
-    color: Colors.green
-    ),
-    child: Column(
-    children: [
-    Image.asset("asset/jajargenjang.jpg", height: 100,),
-    Text("Jajargenjang"),
-    ],
 
-              )
-          ),
         ],
     )
     );
@@ -66,7 +70,7 @@ class CustomMenu extends StatelessWidget {
       child: Column(
         children: [
           Image.asset(
-            imageAssets
+            imageAssets, height: 200, width: 200,
           ),
           Text(title),
         ],

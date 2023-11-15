@@ -81,7 +81,10 @@ final PersegiController _persegiController = Get.put(PersegiController());
           ),
 
           Obx(() => Text(_persegiController.hasil.value,
-            style: TextStyle(color: Colors.green),))
+            style: TextStyle(
+                color: _persegiController.isHitungLuas.value
+                ? Colors.redAccent
+                : Colors.greenAccent),))
         ],
       ),
     );
